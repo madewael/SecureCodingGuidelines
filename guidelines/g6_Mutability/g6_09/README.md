@@ -1,4 +1,7 @@
 # MUTABLE-9: Make public static fields final
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Callers can trivially access and modify public non-final static fields. Neither accesses nor modifications can be guarded against, and newly set values cannot be validated. Fields with subclassable types may be set to objects with malicious implementations. Always declare public static fields as final.
 
         public class Files {

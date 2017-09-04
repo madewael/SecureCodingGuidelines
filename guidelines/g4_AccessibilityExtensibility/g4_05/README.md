@@ -1,4 +1,7 @@
 # EXTEND-5: Limit the extensibility of classes and methods
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Design classes and methods for inheritance or declare them final [6]. Left non-final, a class or method can be maliciously overridden by an attacker. A class that does not permit subclassing is easier to implement and verify that it is secure. Prefer composition to inheritance.
 
 	// Unsubclassable class with composed behavior.

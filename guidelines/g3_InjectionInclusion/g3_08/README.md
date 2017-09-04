@@ -1,4 +1,7 @@
 # INJECT-8: Take care interpreting untrusted code
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Code can be hidden in a number of places. If the source is not trusted to supply code, then a secure sandbox must be constructed to run it in. Some examples of components or APIs that can potentially execute untrusted code include:
 
 Scripts run through the javax.script scripting API or similar.

@@ -1,4 +1,7 @@
 # OBJECT-3: Defend against partially initialized instances of non-final classes
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 When a constructor in a non-final class throws an exception, attackers can attempt to gain access to partially initialized instances of that class. Ensure that a non-final class remains totally unusable until its constructor completes successfully.
 
 From JDK 6 on, construction of a subclassable class can be prevented by throwing an exception before the Object constructor completes. To do this, perform the checks in an expression that is evaluated in a call to this() or super().

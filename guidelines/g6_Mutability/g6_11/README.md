@@ -1,4 +1,7 @@
 # MUTABLE-11: Do not expose mutable statics
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Private statics are easily exposed through public interfaces, if sometimes only in a limited way (see Guidelines 6-2 and 6-6). Mutable statics may also change behaviour between unrelated code. To ensure safe code, private statics should be treated as if they are public. Adding boilerplate to expose statics as singletons does not fix these issues.
 
 Mutable statics may be used as caches of immutable flyweight values. Mutable objects should never be cached in statics. Even instance pooling of mutable objects should be treated with extreme caution.

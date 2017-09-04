@@ -1,4 +1,7 @@
 # SERIAL-3: View deserialization the same as object construction
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Deserialization creates a new instance of a class without invoking any constructor on that class. Therefore, deserialization should be designed to behave like normal construction.
 
 Default deserialization and ObjectInputStream.defaultReadObject can assign arbitrary objects to non-transient fields and does not necessarily return. Use ObjectInputStream.readFields instead to insert copying before assignment to fields. Or, if possible, don't make sensitive classes serializable.

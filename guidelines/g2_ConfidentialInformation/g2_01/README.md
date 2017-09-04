@@ -1,4 +1,7 @@
 # CONFIDENTIAL-1: Purge sensitive information from exceptions
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Exception objects may convey sensitive information. For example, if a method calls the java.io.FileInputStream constructor to read an underlying configuration file and that file is not present, a java.io.FileNotFoundException containing the file path is thrown. Propagating this exception back to the method caller exposes the layout of the file system. Many forms of attack require knowing or guessing locations of files.
 
 Exposing a file path containing the current user's name or home directory exacerbates the problem. SecurityManager checks guard this information when it is included in standard system properties (such as user.home) and revealing it in exception messages effectively allows these checks to be bypassed.

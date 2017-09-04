@@ -1,4 +1,7 @@
 # ACCESS-4: Know how to restrict privileges through doPrivileged
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 As permissions are restricted to the intersection of frames, an artificial AccessControlContext representing no (zero) frames implies all permissions. The following three calls to doPrivileged are equivalent:
 
         private static final AccessControlContext allPermissionsAcc =

@@ -1,4 +1,7 @@
 # MUTABLE-7: Treat output from untrusted object as input
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 The above guidelines on input objects apply when returned from untrusted objects. Appropriate copying and validation should be applied.
 
         private final Date start;

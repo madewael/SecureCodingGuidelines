@@ -1,4 +1,7 @@
 # MUTABLE-3: Create safe copies of mutable and subclassable input values
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Mutable objects may be changed after and even during the execution of a method or constructor call. Types that can be subclassed may behave incorrectly, inconsistently, and/or maliciously. If a method is not specified to operate directly on a mutable input parameter, create a copy of that input and perform the method logic on the copy. In fact, if the input is stored in a field, the caller can exploit race conditions in the enclosing class. For example, a time-of-check, time-of-use inconsistency (TOCTOU) [7] can be exploited where a mutable input contains one value during a SecurityManager check but a different value when the input is used later.
 
 To create a copy of an untrusted mutable object, call a copy constructor or creation method:

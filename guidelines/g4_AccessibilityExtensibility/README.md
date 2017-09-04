@@ -1,4 +1,7 @@
 # 4 Accessibility and Extensibility
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 The task of securing a system is made easier by reducing the "attack surface" of the code.
 
  - EXTEND-1: [Limit the accessibility of classes, interfaces, methods, and fields](g4_01)

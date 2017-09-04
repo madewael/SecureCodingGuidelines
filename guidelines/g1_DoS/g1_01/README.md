@@ -1,4 +1,9 @@
 # Beware of activities that may use disproportionate resources
+
+
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Examples of attacks include:
 
 Requesting a large image size for vector graphics. For instance, SVG and font files.

@@ -1,4 +1,7 @@
 # ACCESS-3: Safely invoke java.security.AccessController.doPrivileged
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 AccessController.doPrivileged enables code to exercise its own permissions when performing SecurityManager-checked operations. For the purposes of security checks, the call stack is effectively truncated below the caller of doPrivileged. The immediate caller is included in security checks.
 
         +--------------------------------+

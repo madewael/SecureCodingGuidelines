@@ -1,4 +1,7 @@
 # ACCESS-6: Understand how to transfer context
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 It is often useful to store an access control context for later use. For example, one may decide it is appropriate to provide access to callback instances that perform privileged operations, but invoke callback methods in the context that the callback object was registered. The context may be restored later on in the same thread or in a different thread. A particular context may be restored multiple times and even after the original thread has exited.
 
 AccessController.getContext returns the current context. The two-argument forms of AccessController.doPrivileged can then replace the current context with the stored context for the duration of an action.

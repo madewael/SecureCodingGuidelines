@@ -2,7 +2,7 @@
 
 
 
-## Links
+## Categories
 
  - 0 [Fundamentals](g0_Fundamentals)
  - 1 [Denial of Service](g1_DoS)
@@ -16,7 +16,7 @@
  - 9 [Access Control](g9_AccessControl)
 
  
-## Introduction 
+## Introduction ![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
 
 One of the main design considerations for the Java platform is to provide a secure environment for executing mobile code. Java comes with its own unique set of security challenges. While the Java security architecture [1] can protect users and systems from hostile programs downloaded over a network, it cannot defend against implementation bugs that occur in trusted code. Such bugs can inadvertently open the very holes that the security architecture was designed to contain, including access to files, printers, webcams, microphones, and the network from behind firewalls. In severe cases local programs may be executed or Java security disabled. These bugs can potentially be used to turn the machine into a zombie computer, steal confidential data from machine and intranet, spy through attached devices, prevent useful operation of the machine, assist further attacks, and many other malicious activities.
 

@@ -1,4 +1,6 @@
-# 7 Object Construction
+# 7 Object Construction ![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 During construction objects are at an awkward stage where they exist but are not ready for use. Such awkwardness presents a few more difficulties in addition to those of ordinary methods.
 
 

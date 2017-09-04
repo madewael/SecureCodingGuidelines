@@ -1,4 +1,7 @@
 # MUTABLE-6: Treat passing input to untrusted object as output
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 The above guidelines on output objects apply when passed to untrusted objects. Appropriate copying should be applied.
 
         private final byte[] data;

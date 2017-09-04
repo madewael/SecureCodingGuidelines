@@ -1,4 +1,4 @@
-# Fundamentals
+# Fundamentals ![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
 The following general principles apply throughout Java security.
 
 - FUNDAMENTALS 0-0 [Prefer to have obviously no flaws rather than no obvious flaws](g0_00)

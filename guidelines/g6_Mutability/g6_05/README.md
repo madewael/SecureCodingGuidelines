@@ -1,4 +1,7 @@
 # MUTABLE-5: Do not trust identity equality when overridable on input reference objects
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Overridable methods may not behave as expected.
 
 For instance, when expecting identity equality behavior, Object.equals may be overridden to return true for different objects. In particular when used as a key in a Map, an object may be able to pass itself off as a different object that it should not have access to.

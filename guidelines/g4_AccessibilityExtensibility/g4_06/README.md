@@ -1,4 +1,7 @@
 # EXTEND-6: Understand how a superclass can affect subclass behavior
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Subclasses do not have the ability to maintain absolute control over their own behavior. A superclass can affect subclass behavior by changing the implementation of an inherited method that is not overridden. If a subclass overrides all inherited methods, a superclass can still affect subclass behavior by introducing new methods. Such changes to a superclass can unintentionally break assumptions made in a subclass and lead to subtle security vulnerabilities. Consider the following example that occurred in JDK 1.2:
 
             Class Hierarchy                  Inherited Methods

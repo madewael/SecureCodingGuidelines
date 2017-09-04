@@ -1,4 +1,7 @@
 # ACCESS-5: Be careful caching results of potentially privileged operations
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 A cached result must never be passed to a context that does not have the relevant permissions to generate it. Therefore, ensure that the result is generated in a context that has no more permissions than any context it is returned to. Because calculation of privileges may contain errors, use the AccessController API to enforce the constraint.
 
         private static final Map cache;

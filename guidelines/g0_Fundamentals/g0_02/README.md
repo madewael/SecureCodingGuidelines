@@ -1,2 +1,2 @@
-# FUNDAMENTALS-2: Avoid duplication
+# FUNDAMENTALS-2: Avoid duplication ![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
 Duplication of code and data causes many problems. Both code and data tend not to be treated consistently when duplicated, e.g., changes may not be applied to all copies.

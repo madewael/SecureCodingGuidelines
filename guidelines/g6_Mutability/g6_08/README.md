@@ -1,4 +1,7 @@
 # MUTABLE-8: Define wrapper methods around modifiable internal state
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 If a state that is internal to a class must be publicly accessible and modifiable, declare a private field and enable access to it via public wrapper methods. If the state is only intended to be accessed by subclasses, declare a private field and enable access via protected wrapper methods. Wrapper methods allow input validation to occur prior to the setting of a new value:
 
         public final class WrappedState {

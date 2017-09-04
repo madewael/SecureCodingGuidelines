@@ -1,4 +1,7 @@
 # ACCESS-1: Understand how permissions are checked
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 The standard security check ensures that each frame in the call stack has the required permission. That is, the current permissions in force is the intersection of the permissions of each frame in the current access control context. If any frame does not have a permission, no matter where it lies in the stack, then the current context does not have that permission.
 
 Consider an application that indirectly uses secure operations through a library.

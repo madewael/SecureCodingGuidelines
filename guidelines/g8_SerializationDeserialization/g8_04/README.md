@@ -1,4 +1,7 @@
 # SERIAL-4: Duplicate the SecurityManager checks enforced in a class during serialization and deserialization
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 Prevent an attacker from using serialization or deserialization to bypass the SecurityManager checks enforced in a class. Specifically, if a serializable class enforces a SecurityManager check in its constructors, then enforce that same check in a readObject or readObjectNoData method implementation. Otherwise an instance of the class can be created without any check via deserialization.
 
 

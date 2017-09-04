@@ -1,4 +1,7 @@
 # DOS-3: Resource limit checks should not suffer from integer overflow
+![Author](https://img.shields.io/badge/Author-Oracle-blue.svg)
+
+
 The Java language provides bounds checking on arrays which mitigates the vast majority of integer overflow attacks. However, some operations on primitive integral types silently overflow. Therefore, take care when checking resource limits. This is particularly important on persistent resources, such as disk space, where a reboot may not clear the problem.
 
 Some checking can be rearranged so as to avoid overflow. With large values, current + max could overflow to a negative value, which would always be less than max.
