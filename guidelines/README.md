@@ -3,7 +3,7 @@
 ## Acknowledgements
 All the text and information in the base version of this repo is simply a conversion to this Git-repo as it is found on the [Oracle website](http://www.oracle.com/technetwork/java/seccodeguide-139067.html). 
 
-##Links
+## Links
 
  - 0 [Fundamentals](g0_Fundamentals)
  - 1 [Denial of Service](g1_DoS)
