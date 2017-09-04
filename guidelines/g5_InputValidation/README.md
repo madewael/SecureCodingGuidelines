@@ -1,13 +1,6 @@
-# Secure Coding Guidelines
-Secure Coding Guidelines for Java SE 
+# 5 Input Validation
+A feature of the culture of Java is that rigorous method parameter checking is used to improve robustness. More generally, validating external inputs is an important part of security.
 
- - 0 [Fundamentals](g0_Fundamentals)
- - 1 [Denial of Service](g1_DoS)
- - 2 [Confidential Information](g2_ConfidentialInformation)
- - 3 [Injection and Inclusion](g3_InjectionInclusion)
- - 4 [Accessibility and Extensibility](g4_AccessibilityExtensibility)
- - 5 [Input Validation](g5_InputValidation)
- - 6 [Mutability](g6_Mutability)
- - 7 [Object Construction](g7_ObjectConstruction)
- - 8 [Serialization and Deserialization](g8_SerializationDeserialization)
- - 9 [Access Control](g9_AccessControl)
+ - [INPUT-1: Validate inputs](g51)
+ - [INPUT-2: Validate output from untrusted objects as input](g52)
+ - [INPUT-3: Define wrappers around native methods](g53)
