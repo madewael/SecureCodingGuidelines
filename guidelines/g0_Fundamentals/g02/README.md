@@ -1,40 +1,4 @@
-# Secure Coding Guidelines
-Secure Coding Guidelines for Java SE 
-
-## Links
-
- - 0 Fundamentals
- - 1 [Denial of Service](../g1_DoS)
- - 2 [Confidential Information](../g2_ConfidentialInformation)
- - 3 [Injection and Inclusion](../g3_InjectionInclusion)
- - 4 [Accessibility and Extensibility](../g4_AccessibilityExtensibility)
- - 5 [Input Validation](../g5_InputValidation)
- - 6 [Mutability](../g6_Mutability)
- - 7 [Object Construction](../g7_ObjectConstruction)
- - 8 [Serialization and Deserialization](../g8_SerializationDeserialization)
- - 9 [Access Control](../g9_AccessControl)
-
-## Fundamentals
-The following general principles apply throughout Java security.
-
-- Guideline 0-0 [Prefer to have obviously no flaws rather than no obvious flaws](g00)
-- Guideline 0-1 [Design APIs to avoid security concerns](g01)
-- Guideline 0-2 [Avoid duplication](g02)
-- Guideline 0-3 [Restrict privileges](g03)
-- Guideline 0-4 [Establish trust boundaries](g04)
-- Guideline 0-5 [Minimise the number of permission checks](g05)
-- Guideline 0-6 [Encapsulate](g06)
-- Guideline 0-7 [Document security-related information](g07)
-
-# X
-
-Guideline 0-0 / FUNDAMENTALS-0: Prefer to have obviously no flaws rather than no obvious flaws [8]
-Creating secure code is not necessarily easy. Despite the unusually robust nature of Java, flaws can slip past with surprising ease. Design and write code that does not require clever logic to see that it is safe. Specifically, follow the guidelines in this document unless there is a very strong reason not to.
-
-Guideline 0-1 / FUNDAMENTALS-1: Design APIs to avoid security concerns
-It is better to design APIs with security in mind. Trying to retrofit security into an existing API is more difficult and error prone. For example, making a class final prevents a malicious subclass from adding finalizers, cloning, and overriding random methods (Guideline 4-5). Any use of the SecurityManager highlights an area that should be scrutinized.
-
-Guideline 0-2 / FUNDAMENTALS-2: Avoid duplication
+# FUNDAMENTALS-2: Avoid duplication
 Duplication of code and data causes many problems. Both code and data tend not to be treated consistently when duplicated, e.g., changes may not be applied to all copies.
 
 Guideline 0-3 / FUNDAMENTALS-3: Restrict privileges
