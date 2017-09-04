@@ -10,8 +10,3 @@ It is sometimes also necessary to sanitize exceptions containing information der
 Be careful when depending on an exception for security because its contents may change in the future. Suppose a previous version of a library did not include a potentially sensitive piece of information in the exception, and an existing client relied upon that for security. For example, a library may throw an exception without a message. An application programmer may look at this behavior and decide that it is okay to propagate the exception. However, a later version of the library may add extra debugging information to the exception message. The application exposes this additional information, even though the application code itself may not have changed. Only include known, acceptable information from an exception rather than filtering out some elements of the exception.
 
 Exceptions may also include sensitive information about the configuration and internals of the system. Do not pass exception information to end users unless one knows exactly what it contains. For example, do not include exception stack traces inside HTML comments.
-
-## Others
- - CONFIDENTIAL-1: Purge sensitive information from exceptions
- - CONFIDENTIAL-2: [Do not log highly sensitive information](g22)
- - CONFIDENTIAL-3: [Consider purging highly sensitive from memory after use](g23)

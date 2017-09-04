@@ -77,13 +77,3 @@ For compatibility with versions of Java prior to JDK 6, check that the class has
         }
 
 When confirming an object's class type by examining the java.lang.Class instance belonging to that object, do not compare Class instances solely using class names (acquired via Class.getName), because instances are scoped both by their class name as well as the class loader that defined the class.
-
-
-
-# Others
- - EXTEND-1: [Limit the accessibility of classes, interfaces, methods, and fields](../g41)
- - EXTEND-2: [Limit the accessibility of packages](../g42)
- - EXTEND-3: [Isolate unrelated code](../g43)
- - EXTEND-4: [Limit exposure of ClassLoader instances](../g44)
- - EXTEND-5: Limit the extensibility of classes and methods
- - EXTEND-6: [Understand how a superclass can affect subclass behavior](../g46)

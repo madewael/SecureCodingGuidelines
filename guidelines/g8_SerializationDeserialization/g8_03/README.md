@@ -48,12 +48,3 @@ In addition create copies of deserialized mutable objects before assigning them 
         }
 
 Attackers can also craft hostile streams in an attempt to exploit partially initialized (deserialized) objects. Ensure a serializable class remains totally unusable until deserialization completes successfully. For example, use an initialized flag. Declare the flag as a private transient field and only set it in a readObject or readObjectNoData method (and in constructors) just prior to returning successfully. All public and protected methods in the class must consult the initialized flag before proceeding with their normal logic. As discussed earlier, use of an initialized flag can be cumbersome. Simply ensuring that all fields contain a safe value (such as null) until deserialization successfully completes can represent a reasonable alternative.
-
-
-## Others
-
- - SERIAL-1: [Avoid serialization for security-sensitive classes](../g81)
- - SERIAL-2: [Guard sensitive data during serialization](../g82)
- - SERIAL-3: View deserialization the same as object construction
- - SERIAL-4: [Duplicate the SecurityManager checks enforced in a class during serialization and deserialization](../g84)
- - SERIAL-5: [Understand the security permissions given to serialization and deserialization](../g85)

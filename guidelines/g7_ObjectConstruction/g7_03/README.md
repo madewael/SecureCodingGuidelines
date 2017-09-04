@@ -83,9 +83,3 @@ A more robust, but also more verbose, approach is to use a "pointer to implement
             }
         }
 
-## Others
- - OBJECT-1: [Avoid exposing constructors of sensitive classes](../g71)
- - OBJECT-2: [Prevent the unauthorized construction of sensitive classes](../g72)
- - OBJECT-3: Defend against partially initialized instances of non-final classes
- - OBJECT-4: [Prevent constructors from calling methods that can be overridden](../g74) 
- - OBJECT-5: [Defend against cloning of non-final classes](../g75)

@@ -25,10 +25,3 @@ If performance is not a particular issue, a verbose approach is to use arbitrary
 A peculiarity of two's complement integer arithmetic is that the minimum negative value does not have a matching positive value of the same magnitude. So, Integer.MIN_VALUE == -Integer.MIN_VALUE, Integer.MIN_VALUE == Math.abs(Integer.MIN_VALUE) and, for integer a, a < 0 does not imply -a > 0. The same edge case occurs for Long.MIN_VALUE.
 
 As of Java SE 8, the java.lang.Math class also contains methods for various operations (e.g. addExact, multiplyExact, decrementExact, etc.) that throw an ArithmeticException if the result overflows the given type.
-
-
-
-## Other DoS
- - DOS-1: [Beware of activities that may use disproportionate resources](../g11)
- - DOS-2: [Release resources in all cases](../g12)
- - DOS-3: Resource limit checks should not suffer from integer overflow

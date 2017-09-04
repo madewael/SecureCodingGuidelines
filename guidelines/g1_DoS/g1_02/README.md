@@ -64,8 +64,3 @@ Some decorators of resources may themselves be resources that require correct re
                 out.flush();
             }
         }
-
-## Other DoS
- - DOS-1: [Beware of activities that may use disproportionate resources](../g11)
- - DOS-2: Release resources in all cases
- - DOS-3: [Resource limit checks should not suffer from integer overflow](../g13)

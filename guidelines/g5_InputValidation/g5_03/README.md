@@ -31,7 +31,3 @@ Java code is subject to runtime checks for type, array bounds, and library usage
             }
         }
         
-# Others
- - [INPUT-1: Validate inputs](../g51)
- - [INPUT-2: Validate output from untrusted objects as input](../g52)
- - INPUT-3: Define wrappers around native methods

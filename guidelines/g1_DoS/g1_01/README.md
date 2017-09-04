@@ -12,8 +12,3 @@ XPath expressions may consume arbitrary amounts of processor time.
 Java deserialization and Java Beans XML deserialization of malicious data may result in unbounded memory or CPU usage.
 Detailed logging of unusual behavior may result in excessive output to log files.
 Infinite loops can be caused by parsing some corner case data. Ensure that each iteration of a loop makes some progress.
-
-## Other DOS
- - DOS-1: Beware of activities that may use disproportionate resources
- - DOS-2: [Release resources in all cases](../g12)
- - DOS-3: [Resource limit checks should not suffer from integer overflow](../g13)

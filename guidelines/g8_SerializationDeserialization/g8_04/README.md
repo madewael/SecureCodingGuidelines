@@ -94,12 +94,3 @@ If a serializable class enables internal state to be retrieved by a caller and t
                 out.writeObject(value);
             }
         }
-
-
-## Others
-
- - SERIAL-1: [Avoid serialization for security-sensitive classes](../g81)
- - SERIAL-2: [Guard sensitive data during serialization](../g82)
- - SERIAL-3: [View deserialization the same as object construction](../g83)
- - SERIAL-4: Duplicate the SecurityManager checks enforced in a class during serialization and deserialization
- - SERIAL-5: [Understand the security permissions given to serialization and deserialization](../g85)

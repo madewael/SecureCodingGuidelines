@@ -23,11 +23,3 @@ The primary flaw is that the data belonging to Provider (its mappings) is stored
 Malicious subclasses may implement java.lang.Cloneable. Implementing this interface affects the behaviour of the subclass. A clone of a victim object may be made. The clone will be a shallow copy. The intrinsic lock and fields of the two objects will be different, but referenced objects will be the same. This allows an adversary to confuse the state of instances of the attacked class.
 
 JDK 8 introduced default methods on interfaces.  These default methods are another path for new and unexpected methods to show up in a class.  If a class implements an interface with default methods, those are now part of the class and may allow unexpected access to internal data.  For a security sensitive class, all interfaces implemented by the class (and all superclasses) would need to be monitored as previously discussed.
-
-# Others
- - EXTEND-1: [Limit the accessibility of classes, interfaces, methods, and fields](../g41)
- - EXTEND-2: [Limit the accessibility of packages](../g42)
- - EXTEND-3: [Isolate unrelated code](../g43)
- - EXTEND-4: [Limit exposure of ClassLoader instances](../g44)
- - EXTEND-5: [Limit the extensibility of classes and methods](../g45)
- - EXTEND-6: Understand how a superclass can affect subclass behavior

@@ -49,17 +49,3 @@ In the above example, if the AppClass frame does not have permission to read a f
 
 For library code to appear transparent to applications with respect to privileges, libraries should be granted permissions at least as generous as the application code that it is used with. For this reason, almost all the code shipped in the JDK and extensions is fully privileged. It is therefore important that there be at least one frame with the application's permissions on the stack whenever a library executes security checked operations on behalf of application code.
 
-## Others
- - ACCESS-1: Understand how permissions are checked
- - ACCESS-2: [Beware of callback methods](../g92)
- - ACCESS-3: [Safely invoke java.security.AccessController.doPrivileged](../g93)
- - ACCESS-4: [Know how to restrict privileges through doPrivileged](../g94)
- - ACCESS-5: [Be careful caching results of potentially privileged operations](../g95)
- - ACCESS-6: [Understand how to transfer context](../g96)
- - ACCESS-7: [Understand how thread construction transfers context](../g97)
- - ACCESS-8: [Safely invoke standard APIs that bypass SecurityManager checks depending on the immediate caller's class loader](../g98)
- - ACCESS-9: [Safely invoke standard APIs that perform tasks using the immediate caller's class loader instance](../g99)
- - ACCESS-10: [Be aware of standard APIs that perform Java language access checks against the immediate caller](../g910)
- - ACCESS-11: [Be aware java.lang.reflect.Method.invoke is ignored for checking the immediate caller](../g911)
- - ACCESS-12: [Avoid using caller-sensitive method names in interface classes](../g912)
- - ACCESS-13: [Avoid returning the results of privileged operations](../g913)

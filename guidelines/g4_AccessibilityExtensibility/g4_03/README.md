@@ -8,13 +8,3 @@ Some apparently global objects are actually local to applet or application conte
 Mutable statics (see Guideline 6-11) and exceptions are common ways that isolation is inadvertently breached. Mutable statics allow any code to interfere with code that directly or, more likely, indirectly uses them.
 
 Library code can be carefully written such that it is safely usable by less trusted code. Libraries require a level of trust at least equal to the code it is used by in order not to violate the integrity of the client code. Containers should ensure that less trusted code is not able to replace more trusted library code and does not have package-private access. Both restrictions are typically enforced by using a separate class loader instance, the library class loader a parent of the application class loader.
-
-
-
-# Others
- - EXTEND-1: [Limit the accessibility of classes, interfaces, methods, and fields](../g41)
- - EXTEND-2: [Limit the accessibility of packages](../g42)
- - EXTEND-3: Isolate unrelated code
- - EXTEND-4: [Limit exposure of ClassLoader instances](../g44)
- - EXTEND-5: [Limit the extensibility of classes and methods](../g45)
- - EXTEND-6: [Understand how a superclass can affect subclass behavior](../g46)
