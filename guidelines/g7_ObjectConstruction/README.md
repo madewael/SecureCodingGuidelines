@@ -1,13 +1,9 @@
-# Secure Coding Guidelines
-Secure Coding Guidelines for Java SE 
+# 7 Object Construction
+During construction objects are at an awkward stage where they exist but are not ready for use. Such awkwardness presents a few more difficulties in addition to those of ordinary methods.
 
- - 0 [Fundamentals](g0_Fundamentals)
- - 1 [Denial of Service](g1_DoS)
- - 2 [Confidential Information](g2_ConfidentialInformation)
- - 3 [Injection and Inclusion](g3_InjectionInclusion)
- - 4 [Accessibility and Extensibility](g4_AccessibilityExtensibility)
- - 5 [Input Validation](g5_InputValidation)
- - 6 [Mutability](g6_Mutability)
- - 7 [Object Construction](g7_ObjectConstruction)
- - 8 [Serialization and Deserialization](g8_SerializationDeserialization)
- - 9 [Access Control](g9_AccessControl)
+
+ - OBJECT-1: [Avoid exposing constructors of sensitive classes](g71)
+ - OBJECT-2: [Prevent the unauthorized construction of sensitive classes](g72)
+ - OBJECT-3: [Defend against partially initialized instances of non-final classes](g73)
+ - OBJECT-4: [Prevent constructors from calling methods that can be overridden](g74) 
+ - OBJECT-5: [Defend against cloning of non-final classes](g75)
